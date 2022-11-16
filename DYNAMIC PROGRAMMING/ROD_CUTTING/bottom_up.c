@@ -1,9 +1,9 @@
 #include<stdio.h>
-int max(int a,int b){
+int max(int a,int b){              //BOTTOM-UP IS ACTUAL DP SOLUTION!!!
   if(a>b) return a;
   else return b;
 }
-int memorize(int arr[],int n){
+int DP_ROD_CUT(int arr[],int n){
   int profit[n+1];
   profit[0]=0;
   int maxp;
@@ -23,6 +23,6 @@ int main(){
   int arr[n];
 
   for(int i=0;i<n;i++) scanf("%d",&arr[i]);
-  int res=memorize(arr,n);
+  int res=DP_ROD_CUT(arr,n);
   printf("Maximum profit generated is: %d ",res);
 }
