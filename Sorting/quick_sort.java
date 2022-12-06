@@ -14,7 +14,7 @@ public class Main {
     }
     int temp=arr[i+1];
     arr[i+1]=arr[high];  // arr[p+1] denotes position of pivot!!
-    arr[high]=temp;
+    arr[high]=temp;      // swapped arr[high] NOT pivot !
     return (i + 1);
   }
 
