@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-class sort{
+class radix_sort{
     public static int max_arr(int arr[], int n)
     {
         int max=arr[0];
