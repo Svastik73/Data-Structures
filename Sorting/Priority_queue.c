@@ -28,6 +28,15 @@ int extract_max(process p[],int n){
     heapify(p,0,n--);
     return temp;
 }
+void insert(process array[], int newid,int newkey,int n) {
+    // always insert at last position of array then heapify from n/2 to 0;  
+    array[n-1].id =newid ;
+    array[n-1].key=newkey;
+    for (int i=n/2-1;i>=0;i--) {
+      heapify(array,n,i);  
+    }
+  }
+}
 
 void build_max_heap(process arr[],int n){
     for(int i=n/2-1;i>=0;i--) heapify(arr,i,n);
@@ -46,4 +55,5 @@ int main(){
     printf("%d",pq[0].key);
     int t=extract_max(pq,n);
     printf("%d",pq[0].key);
+    
 }
