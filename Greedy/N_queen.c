@@ -24,7 +24,7 @@ void Nqueen(int k,int n){  // k is row
             x[k]=column;
             if(k==n){  // means last queen so no more recursion
                 display(n);
-                exit(0);
+                exit(0); // if exit(0) is not placed it will print all the solutions!
             }
             else Nqueen(k+1,n);
         }
