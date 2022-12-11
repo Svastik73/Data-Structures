@@ -1,10 +1,10 @@
 #include<stdio.h>
 #include<stdlib.h>
 int x[50];  // x[i] will store column no. of queen number i!
-int place(int k,int xk){  
+int place(int q_no,int column){  
     int j;
-    for(j=1;j<=k;j++){
-        if(x[j]==xk || abs(x[j]-xk)==abs(j-k)){
+    for(j=1;j<=q_no;j++){
+        if(x[j]==column || abs(x[j]-column)==abs(j-q_no)){
             return 0;
             //  xk is position not acceptable for queen!
         }
