@@ -20,7 +20,7 @@ void display(int n){
 void Nqueen(int k,int n){  // k is row
     int column;  // k is the number of queen entered !
     for(column=1; column<=n; column++){   // this ensure automatic backtrack!!
-        if(place(k,column)==1){
+        if(place(k,column)==1){   // back tracking is done using recursion() inside a  loop!
             x[k]=column;
             if(k==n){  // means last queen so no more recursion
                 display(n);
