@@ -3,6 +3,14 @@ Given a m x n grid filled with non-negative numbers, find a path from top left t
 
 Note: You can only move either down or right at any point in time.
 
+
+[
+[1,3,1]
+[1,5,1]
+[4,2,1]
+]
+answer=1+3+1+1+1==7
+
 '''
 class Solution(object):
     def minPathSum(self, grid):
